@@ -1,0 +1,309 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayNest - Hotel Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Stay<span>Nest</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="rooms.html" class="nav-btn">Book Now</a>
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">WELCOME TO STAYNEST</p>
+
+        <h1>
+            Your stay.<br>
+            <span>Your comfort.</span>
+        </h1>
+
+        <p>
+            Discover comfortable rooms, modern amenities
+            and memorable stays.
+        </p>
+
+        <form class="search-box" id="searchForm">
+
+            <div class="field">
+                <label>Check-in</label>
+                <input type="date" id="checkIn" required>
+            </div>
+
+            <div class="field">
+                <label>Check-out</label>
+                <input type="date" id="checkOut" required>
+            </div>
+
+            <div class="field">
+                <label>Guests</label>
+
+                <select id="guests">
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                </select>
+            </div>
+
+            <button type="submit">
+                Search Rooms
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-title">
+
+        <div>
+            <p class="eyebrow">STAY YOUR WAY</p>
+            <h2>Popular Rooms</h2>
+        </div>
+
+        <a href="rooms.html">View All Rooms →</a>
+
+    </div>
+
+
+    <div class="room-grid">
+
+        <div class="room-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80"
+                alt="Deluxe Room"
+            >
+
+            <div class="room-content">
+
+                <span class="badge">Popular</span>
+
+                <h3>Deluxe King Room</h3>
+
+                <p>
+                    King bed · 2 guests · City view
+                </p>
+
+                <div class="room-bottom">
+
+                    <strong>
+                        ₹4,999
+                        <small>/ night</small>
+                    </strong>
+
+                    <a href="booking.html?room=Deluxe%20King%20Room&price=4999">
+                        Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="room-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+                alt="Executive Suite"
+            >
+
+            <div class="room-content">
+
+                <span class="badge">Premium</span>
+
+                <h3>Executive Suite</h3>
+
+                <p>
+                    King bed · 3 guests · Lounge area
+                </p>
+
+                <div class="room-bottom">
+
+                    <strong>
+                        ₹7,499
+                        <small>/ night</small>
+                    </strong>
+
+                    <a href="booking.html?room=Executive%20Suite&price=7499">
+                        Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="room-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
+                alt="Family Room"
+            >
+
+            <div class="room-content">
+
+                <span class="badge">Family</span>
+
+                <h3>Family Garden Room</h3>
+
+                <p>
+                    2 beds · 4 guests · Garden view
+                </p>
+
+                <div class="room-bottom">
+
+                    <strong>
+                        ₹6,299
+                        <small>/ night</small>
+                    </strong>
+
+                    <a href="booking.html?room=Family%20Garden%20Room&price=6299">
+                        Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="amenities" id="amenities">
+
+    <div class="section-title center">
+
+        <div>
+            <p class="eyebrow">WHY STAYNEST</p>
+            <h2>Everything You Need</h2>
+        </div>
+
+    </div>
+
+
+    <div class="amenity-grid">
+
+        <div class="amenity">
+            <div class="icon">📶</div>
+            <h3>Free Wi-Fi</h3>
+            <p>
+                Fast and reliable internet throughout the hotel.
+            </p>
+        </div>
+
+        <div class="amenity">
+            <div class="icon">🏊</div>
+            <h3>Swimming Pool</h3>
+            <p>
+                Relax and enjoy our outdoor swimming pool.
+            </p>
+        </div>
+
+        <div class="amenity">
+            <div class="icon">🛎️</div>
+            <h3>24/7 Support</h3>
+            <p>
+                Our hotel team is available around the clock.
+            </p>
+        </div>
+
+        <div class="amenity">
+            <div class="icon">🚗</div>
+            <h3>Free Parking</h3>
+            <p>
+                Convenient parking for all hotel guests.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <div>
+
+        <p class="eyebrow">PLAN YOUR NEXT STAY</p>
+
+        <h2>
+            Comfort is just a booking away.
+        </h2>
+
+    </div>
+
+    <a href="rooms.html">
+        Explore Rooms
+    </a>
+
+</section>
+
+
+<footer id="contact">
+
+    <div>
+        <div class="logo">
+            Stay<span>Nest</span>
+        </div>
+
+        <p>
+            Comfortable stays for every journey.
+        </p>
+    </div>
+
+    <div>
+        <h4>Contact</h4>
+
+        <p>
+            hello@staynest.com<br>
+            +91 98765 43210
+        </p>
+    </div>
+
+    <div>
+        <h4>Location</h4>
+
+        <p>
+            MG Road<br>
+            New Delhi, India
+        </p>
+    </div>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
+```
